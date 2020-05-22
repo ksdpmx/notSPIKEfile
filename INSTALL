@@ -2,4 +2,4 @@ For x86_64, install gcc-multilib, compile libdisasm, compile notSPIKEfile.
 
 For i686, compile libdisasm, compile notSPIKEfile.
 
-Also, there's a docker image if you don't want to build yourself.
+Also, there's a docker image if you don't want to build by yourself.
