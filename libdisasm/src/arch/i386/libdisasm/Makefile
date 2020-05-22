@@ -1,9 +1,9 @@
 LIBNAME	= libdisasm.so
 INCLUDE 	= -I.
-FLAGS 	= $(INCLUDE)  -O3 -ggdb
+FLAGS 	= $(INCLUDE)  -O3 -ggdb -march=i686
 LFLAGS 	= $(FLAGS) -fPIC -shared -Wl,-soname,$(LIBNAME)
 RM		= rm
-CC		= gcc
+CC		= gcc -m32
 
 SRC		= 	libdis.c \
 			i386_invariant.c \

@@ -1,5 +1,5 @@
-CC=gcc
-CFLAGS=
+CC=gcc -m32
+CFLAGS="-march=i686"
 SRC=notSPIKEfile.c fuzz_utils.c signal_utils.c ptrace_utils.c
 LIBDIR=libdisasm/src/arch/i386/libdisasm
 INCLUDEDIR=include
