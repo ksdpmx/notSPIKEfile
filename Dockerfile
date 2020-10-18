@@ -2,8 +2,7 @@ FROM i386/debian:buster
 
 # change me
 RUN echo "deb http://ftp2.cn.debian.org/debian buster main" > /etc/apt/sources.list
-RUN apt-get update
-RUN apt-get install -y build-essential git
+RUN apt-get update && apt-get install -y build-essential git
 
 RUN git clone https://github.com/ksdpmx/notSPIKEfile.git /notSPIKEfile
 
